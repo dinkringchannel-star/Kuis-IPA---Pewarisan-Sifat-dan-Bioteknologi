@@ -430,7 +430,7 @@
 
     // ====== 50 PERTANYAAN ======
     const soalAsli = [
-  {
+      {
         q: "Ilmu yang mempelajari tentang pewarisan sifat dari induk kepada keturunannya disebut...",
         o: [
           "Ekologi",
@@ -661,18 +661,7 @@
         a: 2
       },
 
-      {
-        q: "Sel kelamin yang membawa satu alel dari setiap pasangan gen disebut...",
-        o: [
-          "Gamet",
-          "Zigot",
-          "Embrio",
-          "Kromosom"
-        ],
-        a: 0
-      },
-
-      {
+    {
         q: "Pada manusia, jumlah kromosom dalam sel tubuh adalah...",
         o: [
           "23",
@@ -813,6 +802,17 @@
           "Transpirasi"
         ],
         a: 1
+      },
+
+      {
+        q: "Mikroorganisme yang banyak dimanfaatkan dalam pembuatan tape adalah...",
+        o: [
+          "Ragi",
+          "Ganggang",
+          "Protozoa",
+          "Cacing"
+        ],
+        a: 0
       },
 
       {
@@ -1119,8 +1119,8 @@
     function mulaiKuis() {
       unlockAudio();
 
-      // PERBAIKAN: Tambahkan 'let' di sini
-      let soal = shuffleArray(soalAsli);
+      // Acak urutan soal setiap mulai kuis
+      soal = shuffleArray(soalAsli);
 
       if ('speechSynthesis' in window) {
         const u = new SpeechSynthesisUtterance(" ");
