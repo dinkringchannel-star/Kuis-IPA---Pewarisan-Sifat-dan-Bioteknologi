@@ -381,7 +381,7 @@
 
     // ====== LAPORAN AKTIVITAS KE GOOGLE SPREADSHEET ======
     // Ganti URL di bawah dengan URL Web App Google Apps Script yang berakhiran /exec.
-    const URL_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbxeh-HuIcUGyopvBaD7Kqfp3-3-rFFY8OD1vM0envOHjhfTM3GR-9z-pHQMBQ6iv_Bf/exec";
+    const URL_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbx16OflbXEh-gNZKUOfq4y2sE_-vDGbrt75-xJF6PMRXWRuEy05ojiGSLRtRZ0HD-JpMA/exec";
 
     let sesiKuis = "";
     try {
@@ -398,7 +398,7 @@
 
     function catatAktivitas(aktivitas, nilaiTambahan = {}) {
       // PERBAIKAN: Mengecek apakah URL masih default/kosong menggunakan .includes()
-      if (!URL_APPS_SCRIPT || URL_APPS_SCRIPT.includes("AKfycbxeh-HuIcUGyopvBaD7Kqfp3-3-rFFY8OD1vM0envOHjhfTM3GR-9z-pHQMBQ6iv_Bf")) {
+      if (!URL_APPS_SCRIPT || URL_APPS_SCRIPT.includes("https://script.google.com/macros/s/AKfycbx16OflbXEh-gNZKUOfq4y2sE_-vDGbrt75-xJF6PMRXWRuEy05ojiGSLRtRZ0HD-JpMA/execc")) {
         console.warn("Laporan belum aktif. Isi URL_APPS_SCRIPT dengan URL Web App Apps Script yang valid.");
         return;
       }
@@ -428,6 +428,13 @@
     // Catat kunjungan ketika halaman dibuka.
     catatAktivitas("Halaman dibuka");
 
+
+
+
+
+
+
+    
     // ====== 50 PERTANYAAN ======
     const soalAsli = [
       {
