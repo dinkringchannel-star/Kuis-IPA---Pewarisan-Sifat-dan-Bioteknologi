@@ -381,8 +381,7 @@
 
     // ====== LAPORAN AKTIVITAS KE GOOGLE SPREADSHEET ======
     // Ganti URL di bawah dengan URL Web App Google Apps Script yang berakhiran /exec.
-    const URL_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbxeh-HuIcUGyopvBaD7Kqfp3-3-rFFY8OD1vM0envOHjhfTM3GR-9z-pHQMBQ6iv_Bf/exec
-";
+    const URL_APPS_SCRIPT = "GANTI_DENGAN_URL_WEB_APP_APPS_SCRIPT";
 
     let sesiKuis = "";
     try {
@@ -399,8 +398,7 @@
 
     function catatAktivitas(aktivitas, nilaiTambahan = {}) {
       if (!URL_APPS_SCRIPT ||
-          URL_APPS_SCRIPT = "https://script.google.com/macros/s/AKfycbxeh-HuIcUGyopvBaD7Kqfp3-3-rFFY8OD1vM0envOHjhfTM3GR-9z-pHQMBQ6iv_Bf/exec
-") {
+          URL_APPS_SCRIPT === "GANTI_DENGAN_URL_WEB_APP_APPS_SCRIPT") {
         console.warn("Laporan belum aktif. Isi URL_APPS_SCRIPT dengan URL Web App Apps Script.");
         return;
       }
